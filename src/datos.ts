@@ -1,6 +1,6 @@
 export type Especialidad = "Medico de familia" | "Pediatra" | "Cardiólogo";
 
-export interface Pacientes {
+export interface Paciente {
   id: number;
   nombre: string;
   apellidos: string;
@@ -11,7 +11,7 @@ export interface Pacientes {
   edad: number;
 }
 
-export const pacientes: Pacientes[] = [
+export const pacientes: Paciente[] = [
   {
     id: 1,
     nombre: "John",

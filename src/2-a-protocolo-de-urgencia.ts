@@ -1,8 +1,6 @@
-import { Pacientes } from "./datos.js";
+import { Paciente } from "./datos.js";
 
-export { pacientes } from "./datos.js";
-
-export const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
+export const activarProtocoloUrgencia = (pacientes: Paciente[]): boolean => {
   let activarProctolo = false;
   for (let i = 0; i < pacientes.length; i++) {
     if (

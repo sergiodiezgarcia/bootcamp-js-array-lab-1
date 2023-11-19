@@ -1,8 +1,8 @@
-import { Pacientes } from "./datos";
+import { Paciente } from "./datos";
 
 export const obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios = (
-  pacientes: Pacientes[]
-): Pacientes[] => {
+  pacientes: Paciente[]
+): Paciente[] => {
   let PacientesAsignadosAPediatriaYMenorDeDiezAnios = [];
   for (let i = 0; i < pacientes.length; i++) {
     if (pacientes[i].especialidad === "Pediatra" && pacientes[i].edad < 10) {
